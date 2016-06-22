@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FFT Makarevich</string>
+    <string name="button_name">Начать</string>
+    <string name="InputTextView">График входящих значений</string>
+    <string name="AmplTextView">График амплитуды</string>
+    <string name="FreqTextView">График фазы</string>
+    <string name="RandomCos">Cos(x)</string>
+    <string name="RandomSin">Sin(x)</string>
+    <string name="RandomNumber">Случайное число</string>
+</resources>
