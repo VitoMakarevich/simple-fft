@@ -17,105 +17,70 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageView"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/pix"
             android:contentDescription="@null"/>
 
         <RadioGroup
+            android:id="@+id/randomiserGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:id="@+id/randomiserGroup">
+            android:paddingTop="20dp">
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/RandomCos"
                 android:id="@+id/randomCos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:checked="true" />
+                android:checked="true"
+                android:text="@string/RandomCos" />
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/RandomSin"
                 android:id="@+id/randomSin"
-                android:layout_gravity="center_horizontal" />
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/RandomNumber"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/RandomSin" />
+
+            <RadioButton
                 android:id="@+id/randomNumber"
-                android:layout_gravity="center_horizontal" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/RandomNumber" />
         </RadioGroup>
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:weightSum="1">
 
             <EditText
+                android:id="@+id/number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:ems="10"
-                android:id="@+id/number"
                 android:layout_weight="0.6"
+                android:ems="10"
                 android:enabled="true"
+                android:inputType="number"
                 android:selectAllOnFocus="false" />
 
             <Button
+                android:id="@+id/buttonStart"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/button_name"
-                android:id="@+id/buttonStart" />
+                android:text="@string/button_name" />
 
         </LinearLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/InputTextView"
-            android:id="@+id/InputTextView"
-            android:layout_gravity="center_horizontal" />
-        <com.jjoe64.graphview.GraphView
-            android:layout_width="match_parent"
-            android:layout_height="200dip"
-            android:id="@+id/graphInput"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/AmplTextView"
-            android:id="@+id/AmplTextView"
-            android:layout_gravity="center_horizontal" />
-        <com.jjoe64.graphview.GraphView
-            android:layout_width="match_parent"
-            android:layout_height="200dip"
-            android:id="@+id/graphAmpl" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/FreqTextView"
-            android:id="@+id/FreqTextView"
-            android:layout_gravity="center_horizontal" />
-        <com.jjoe64.graphview.GraphView
-            android:layout_width="match_parent"
-            android:layout_height="200dip"
-            android:id="@+id/graphFreq"
-           />
-
-
-
     </LinearLayout>
 </RelativeLayout>
 </ScrollView>
